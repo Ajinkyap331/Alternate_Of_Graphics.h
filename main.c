@@ -4,7 +4,7 @@
 
 int main()
 {
-    FILE *ptr = fopen("data.txt", "w");
+    FILE *ptr = fopen("data.txt", "w+");
     fclose(ptr);
     width(5);
     char color[][6] = {"red", "blue", "black", "green"};
