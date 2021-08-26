@@ -48,40 +48,47 @@ void arc(int x, int y, int start_angle, int end_angle, int radius)
     fclose(ptr);
 }
 
-void width(int w){
+void width(int w)
+{
     FILE *ptr = fopen("data.txt", "a");
     fprintf(ptr, "%s\n%d \n", "width", w);
     fclose(ptr);
 }
 
-void forward(int p){
+void forward(int p)
+{
     FILE *ptr = fopen("data.txt", "a");
     fprintf(ptr, "%s\n%d \n", "forward", p);
     fclose(ptr);
 };
-void backward(int p){
+void backward(int p)
+{
     FILE *ptr = fopen("data.txt", "a");
     fprintf(ptr, "%s\n%d \n", "backward", p);
     fclose(ptr);
 }
-void right(int d){
+void right(int d)
+{
     FILE *ptr = fopen("data.txt", "a");
     fprintf(ptr, "%s\n%d \n", "right", d);
     fclose(ptr);
 }
-void left(int d){
+void left(int d)
+{
     FILE *ptr = fopen("data.txt", "a");
     fprintf(ptr, "%s\n%d \n", "left", d);
     fclose(ptr);
 }
 
-void style(const char c[], int f, const char t[]){
+void style(const char c[], int f, const char t[])
+{
     FILE *ptr = fopen("data.txt", "a");
     fprintf(ptr, "%s\n%s %d %s\n", "style", c, f, t);
     fclose(ptr);
 }
 
-void write(const char t[], const char a[]){
+void write(const char t[], const char a[])
+{
     FILE *ptr = fopen("data.txt", "a");
     fprintf(ptr, "%s\n%s %s\n", "write", t, a);
     fclose(ptr);

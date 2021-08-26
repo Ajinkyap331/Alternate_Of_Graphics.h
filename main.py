@@ -1,9 +1,9 @@
 import turtle
 AJ = turtle.Turtle()
 turtle.title("Made BY Ajinkya")
-f = open('data.txt', 'r')
 win = turtle.Screen()
 A = []
+f = open('data.txt', 'r')
 for i in f:
     A.append(i)
 f.close()
