@@ -1,9 +1,10 @@
 import turtle
+import time
 AJ = turtle.Turtle()
 turtle.title("Made BY Ajinkya")
 win = turtle.Screen()
 A = []
-f = open('data.txt', 'r')
+f = open('Graphics/data.txt', 'r')
 for i in f:
     A.append(i)
 f.close()
@@ -86,5 +87,8 @@ for item in range(len(A)):
         A[item+1] = A[item+1].replace("\n", "")
         text, alignit = A[item+1].split(' ')
         AJ.write(text, font=style, align=alignit)
+    
+    elif 'end' in A[item]:
+        A[item+1] = A[item+1].replace("\n", "")
+        time.sleep(int(A[item+1]))
 
-input("Enter any key to quit : ")

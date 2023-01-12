@@ -1,0 +1,12 @@
+width
+5 
+setcolor
+blue
+circle
+10 10 60
+setcolor
+black
+circle
+20 20 60
+end
+3

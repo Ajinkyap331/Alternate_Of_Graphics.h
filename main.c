@@ -1,18 +1,18 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "SAAD.h"
+#include "Graphics/SAAD.h"
 
 int main()
 {
-    FILE *ptr = fopen("data.txt", "w+");
-    fclose(ptr);
+    start();
     width(5);
     char color[][6] = {"red", "blue", "black", "green"};
-    for (int i = 10; i <= 100; i += 10)
+    for (int i = 10; i <= 20; i += 10)
     {
         setcolor(color[(i / 10) % 4]);
         circle(i, i, 60);
+        // forward(i*10);
     }
-    PY; // Do not remove this
+    end(3);
     return 0;
 }

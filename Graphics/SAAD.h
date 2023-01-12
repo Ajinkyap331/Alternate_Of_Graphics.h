@@ -1,8 +1,9 @@
 #include <stdio.h>
 #include "SAAD.c"
-#define PY system("python main.py");
+// #define PY system("python3 Graphics/main.py");
 
-
+void start();
+void end(int);
 void circle(int, int, int);
 void line(int, int, int, int);
 void addimage(const char[]);
